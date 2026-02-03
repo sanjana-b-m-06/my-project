@@ -1,0 +1,8 @@
+{
+  "name": "AI Math Chatbot",
+  "description": "An advanced mathematical reasoning assistant powered by Gemini 3, featuring real-time LaTeX rendering, multimodal file analysis, and a voice-interactive 'Live' mode.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

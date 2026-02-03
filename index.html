@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SigmaMath AI | Advanced Mathematical Reasoning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+    
+    :root {
+      --bg-primary: #ffffff;
+      --text-primary: #111827;
+      --sidebar-bg: #f9fafb;
+      --accent: #2563eb;
+    }
+
+    .theme-dark {
+      --bg-primary: #0f172a;
+      --text-primary: #f8fafc;
+      --sidebar-bg: #1e293b;
+      --accent: #3b82f6;
+    }
+
+    .theme-math {
+      --bg-primary: #f0f4ff;
+      --text-primary: #1e3a8a;
+      --sidebar-bg: #dbeafe;
+      --accent: #1d4ed8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .theme-dark .glass {
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    .math-font { font-family: 'Inter', sans-serif; }
+    
+    /* KaTeX customization */
+    .katex { font-size: 1.1em; }
+    .katex-display { margin: 1em 0; overflow-x: auto; overflow-y: hidden; }
+
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.3); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(156, 163, 175, 0.5); }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+      "react/": "https://esm.sh/react@^19.2.4/",
+      "react": "https://esm.sh/react@^19.2.4",
+      "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
